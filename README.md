@@ -4,6 +4,8 @@
 
 ### Description: *The purpose of the group is to learn, practice, and discuss Python concepts.*
 
+[GitHub](https://github.com/ashleyann9535)
+
 ---
 
 ```python 
@@ -17,3 +19,10 @@ else:
     print('unlucky')
 
 ```
+
+### Table of Contents
+#### Exercises
+- [Exercise 2](https://github.com/ashleyann9535/fhlbc-code-warrior/blob/main/Q1%20Exercises/01132023.py)
+- [Exercises 4-10](https://github.com/ashleyann9535/fhlbc-code-warrior/blob/main/Q1%20Exercises/01182023.py)
+- [Exercise 11](https://github.com/ashleyann9535/fhlbc-code-warrior/blob/main/Q1%20Exercises/01252023.py)
+- [Exercise 12](https://github.com/ashleyann9535/fhlbc-code-warrior/blob/main/Q1%20Exercises/02032023.py)

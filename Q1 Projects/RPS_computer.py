@@ -1,9 +1,9 @@
-import random
+from random import choice
 
 options = ['rock', 'paper', 'scissors']
 
 player1 = input("(enter Player 1's choice): ")
-computer = random.choice(options)
+computer = choice(options)
 print(f'computer\'s choice: {computer}')
 
 if player1 == computer:

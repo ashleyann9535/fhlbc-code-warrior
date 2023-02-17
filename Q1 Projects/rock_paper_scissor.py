@@ -3,11 +3,15 @@ print("...paper...")
 print("...scissors...")
 
 player1 = input("(enter Player 1's choice): ")
+print('*** \n \n' * 10)
+print('your turn')
 player2 = input("(enter Player 2's choice): ")
 
 print("SHOOT!")
 
-if player1 =='rock':
+if player1 == player2:
+    print('tie game')
+elif player1 =='rock':
     if player2 == 'paper':
         print('player2 win!')
     elif player2 == 'scissors':
@@ -22,8 +26,6 @@ elif player1 == 'paper':
         print('player1 wins')
     elif player2 == 'scissors':
         print('player2 win!')
-elif player1 == player2:
-    print('tie game')
 else:
     print('please try again')
 

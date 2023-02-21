@@ -12,8 +12,7 @@ for x in range(11, 21, 2):
 #Given a number as a input, use a loop to print a string that number of times
 
 #num = input('How many times do I have to tell you?')
-for x in range(int(num)):
-    pass
+#for x in range(int(num)):
     #print('Knock')
 
 #Extra Practice Unlucky Numbers
@@ -21,8 +20,9 @@ for x in range(int(num)):
 # Odd, print 'n is odd'.
 for n in range(1,21):
     if n == 4 or n == 13:
-        print(f'{n} is unlucky!')
+        state = 'unlucky'
     elif n % 2 == 0:
-        print(f'{n} is even')
+        state = 'even'
     else:
-        print(f'{n} is odd')
+        state = 'odd'
+    print(f'{n} is {state}')

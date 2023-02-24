@@ -34,28 +34,45 @@
 from random import choice
 
 options = ['rock', 'paper', 'scissors']
+i = 0
 
-player1 = input("(enter Player 1's choice): ")
-computer = choice(options)
-print(f'computer\'s choice: {computer}')
+while i <= 4:
+    player1 = input("(enter Player 1's choice): ")
+    computer = choice(options)
+    print(f'computer\'s choice: {computer}')
 
-if player1 == computer:
-    print('its a tie')
-elif player1 =='rock':
-    if computer == 'paper':
-        print('computer wins!')
-    elif computer == 'scissors':
-        print('player1 wins')
-elif player1 == 'scissors':
-    if computer == 'paper':
-        print('player1 wins')
-    elif computer == 'rock':
-        print('computer wins!')
-elif player1 == 'paper':
-    if computer == 'rock':
-        print('player1 wins')
-    elif computer == 'scissors':
-        print('computer wins!')
+    p1Score = 0
+    computerScore = 0
+
+    if player1 == computer:
+        i -= 1
+        print('its a tie')
+    elif player1 =='rock':
+        if computer == 'paper':
+            computerScore += 1
+            print('computer wins!')
+        elif computer == 'scissors':
+            p1Score += 1
+            print('player1 wins')
+    elif player1 == 'scissors':
+        if computer == 'paper':
+            p1Score += 1
+            print('player1 wins')
+        elif computer == 'rock':
+            computerScore += 1
+            print('computer wins!')
+    elif player1 == 'paper':
+        if computer == 'rock':
+            p1Score += 1
+            print('player1 wins')
+        elif computer == 'scissors':
+            computerScore += 1
+            print('computer wins!')
+    else:
+        print('please try again')
+    i += 1
+if p1Score > computerScore:
+    print(f'Game Over: Player 1 Wins!')
 else:
-    print('please try again')
+    print(f'Game Over: Computer Wins!')
 

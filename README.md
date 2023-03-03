@@ -31,3 +31,6 @@ else:
 
 #### Mini-Projects
 - [Rock Paper Scissors Game](https://github.com/ashleyann9535/fhlbc-code-warrior/blob/main/Q1%20Projects/rock_paper_scissor.py)
+
+#### Code Wars Practice
+- [Thinkful - List and Loop Drills: Grade calculator](https://github.com/ashleyann9535/fhlbc-code-warrior/blob/main/Code_Wars_python/03012023.py)

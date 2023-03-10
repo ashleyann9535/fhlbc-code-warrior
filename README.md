@@ -34,3 +34,5 @@ else:
 
 #### Code Wars Practice
 - [Thinkful - List and Loop Drills: Grade calculator](https://github.com/ashleyann9535/fhlbc-code-warrior/blob/main/Code_Wars_python/03012023.py)
+- [Reversed Strings](https://github.com/ashleyann9535/fhlbc-code-warrior/blob/main/Code_Wars_python/03092023.py)
+- [Cat years, Dog years](https://github.com/ashleyann9535/fhlbc-code-warrior/blob/main/Code_Wars_python/03092023.py)

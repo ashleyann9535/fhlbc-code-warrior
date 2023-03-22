@@ -20,18 +20,25 @@ def div_con(x):
 # If the letter occurs only once in the string, then -1 should also be returned.
 
 def second_symbol(s, symbol):
-    round = 0
-    count = 0
-    for char in s:
-        round += 1
-        if char == symbol:
-            count +=1
-        if count == 2:
-            break
-    if count == 2:
-        return round - 1
-    else:
-        return -1
+    match = 0
+    for i in range(len(s)-1):
+        if s[i] == symbol:
+            match += 1
+        if match == 2:
+            return i
+    return -1
+    # round = 0
+    # count = 0
+    # for char in s:
+    #     round += 1
+    #     if char == symbol:
+    #         count +=1
+    #     if count == 2:
+    #         break
+    # if count == 2:
+    #     return round - 1
+    # else:
+    #     return -1
 
 print(second_symbol('Hello world!!!','l')) # 3
 print(second_symbol('Hello world!!!', 'A')) # -1

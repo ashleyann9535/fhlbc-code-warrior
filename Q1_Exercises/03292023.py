@@ -17,4 +17,21 @@ sounds = ["super", "cali", "fragil", "istic", "expi", "ali", "docious"]
 long_sound = ''
 for sound in sounds:
     long_sound += sound.upper()
-print(long_sound)
+#print(long_sound)
+
+#Exercise 18 and 19 Lists Basics Exercise
+# Initially create an empty list called instructors
+instructors = []
+# Add the following strings to the instructors list 
+    # "Colt"
+    # "Blue"
+    # "Lisa"
+instructors.extend(('Colt', 'Blue', 'Lisa'))
+# Remove the last value in the list
+instructors.pop()
+# Remove the first value in the list
+instructors.pop(0)
+# Add the string "Done" to the beginning of the list
+instructors.insert(0,'Done')
+print(instructors)
+

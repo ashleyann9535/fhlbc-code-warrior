@@ -27,8 +27,21 @@ answer2 = [num for num in numbers if num%2 == 0]
 list1 = [1,2,3,4]
 list2 = [3,4,5,6]
 answer3 = [x for x in list1 if x in list2]
-print(answer3)
+#print(answer3)
 
 names = ["Elie", "Tim", "Matt"]
 answer4 = [name.lower() [::-1] for name in names]
-print(answer4)
+#print(answer4)
+
+#Exercise 22 Another List Comp Exercise
+#For all the numbers between 1 and 100(including 100), create a variable called answer, 
+# which contains a list with all the numbers that are divisible by 12.  (12, 24, etc)
+answer5 = [x for x in list(range(1,101)) if x%12 == 0]
+#print(answer5)
+
+#Exercise 23 List Exercises 4
+#Given the string "amazing", create a variable called answer, which is a list containing 
+# all the letters from "amazing" but not the vowels (a, e, i, o, and u).  
+# The answer should look like: ['m', 'z', 'n', 'g'].
+answer6 = [x for x in 'amazing' if x not in 'aeiou']
+print(answer6)

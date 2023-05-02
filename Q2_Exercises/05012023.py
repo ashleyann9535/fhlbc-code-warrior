@@ -23,7 +23,7 @@ donations = dict(sam=25.0, lena=88.99, chuck=13.0, linus=99.5, stan=150.0, lisa=
 # DON'T TOUCH PLEASE!
 # Use a loop to add together all the donations and store the resulting number 
 # in a variable called total_donations
-total_donations = 0
-for value in donations.values():
-    total_donations += value
+total_donations = sum(donations.values())
+# for value in donations.values():
+#     total_donations += value
 print(total_donations)

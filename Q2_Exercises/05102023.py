@@ -16,10 +16,10 @@ bakery_stock = {
     "tea cake": 25
 }
 # YOUR CODE GOES BELOW:
-if food in bakery_stock:
-    print(f"{bakery_stock[food]} left")
-else:
-    print("We don't make that")
+# if food in bakery_stock:
+#     print(f"{bakery_stock[food]} left")
+# else:
+#     print("We don't make that")
 
 #Exercise 30 - Fromkeys Exercise
 #DO NOT TOUCH game_properties!
@@ -27,4 +27,17 @@ game_properties = ["current_score", "high_score", "number_of_lives", "items_in_i
 # Use the game_properties list and dict.fromkeys() to generate a dictionary 
 # with all values set to 0. Save the result to a variable called initial_game_state
 initial_game_state= {}.fromkeys(game_properties, 0)
-print(initial_game_state)
+#print(initial_game_state)
+
+#Exercise 31 - Dictionary Methods Exercise
+inventory = {'croissant': 19, 'bagel': 4, 'muffin': 8, 'cake': 1} #DON'T CHANGE THIS LINE!
+# Make a copy of inventory and save it to a variable called stock_list USE A DICTIONARY METHOD
+stock_list = inventory.copy()
+# add the value 18 to stock_list under the key "cookie"
+stock_list['cookie'] = 18
+# remove 'cake' from stock_list USE A DICTIONARY METHOD
+stock_list.pop('cake')
+print(stock_list)
+
+
+

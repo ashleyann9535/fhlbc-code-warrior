@@ -21,6 +21,24 @@ def how_much_i_love_you(num):
 
     return phrases[location]
 
-print(how_much_i_love_you(2)) # 'a little
-print(how_much_i_love_you(6)) # 'not at all
-print(how_much_i_love_you(11))# madly 
+#print(how_much_i_love_you(2)) # 'a little
+#print(how_much_i_love_you(6)) # 'not at all
+#print(how_much_i_love_you(11))# madly 
+
+#The 5 Love Languages
+##Test to run in code wars to get response
+LOVE_LANGUAGES = ["words", "acts", "gifts", "time", "touch"]
+
+def love_language(partner, weeks):
+    responses = {'words': 0, 'acts': 0, 'gifts': 0, 'time': 0, 'touch': 0}
+    chances = weeks * 7
+    
+    for t in range(chances):
+        for lang in LOVE_LANGUAGES:
+            try:
+                if partner.response(lang) == 'positive':
+                    responses[lang] +=1
+            except Exception as err:
+                print(err)
+    
+    return max(responses, key=responses.get)

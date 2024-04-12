@@ -14,24 +14,17 @@ def step_through_with(s):
 
 #How Green Is My Valley?
 def make_valley(arr):
-    if len(arr) < 2:
-        return arr
-    
     right = []
     left = []
-    index = 1
 
     arr_sort = sorted(arr, reverse=True)
 
-    for num in arr_sort[:-1]:
+    for index, val in enumerate(arr_sort):
         if index % 2 != 0:
-            left.append(num)
+            left.append(val)
         else:
-            right.insert(0,num)
+            right.insert(0,val)
 
-        index += 1
-
-    left.append(arr_sort[-1])
     left.extend(right)
 
     return left
